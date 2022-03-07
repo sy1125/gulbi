@@ -1,0 +1,106 @@
+#page {
+  #main {
+    .slider-area {
+      text-align: center;
+      .slide {
+        position: relative;
+        height: 100vh;
+        &:nth-child(odd) {
+          color: #fff;
+          background-color: #324299;
+        }
+        .title {
+          padding-top: 11.6rem;
+          font-size: 3.4rem;
+          font-weight: 300;
+          line-height: 4.1rem;
+        }
+        img {
+          width: calc(27.5rem);
+          margin: 3.2rem auto;
+        }
+        .text {
+          font-size: 1.7rem;
+          font-weight: 300;
+          line-height: 2.2rem;
+        }
+      }
+    }
+    .header {
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 4.4rem;
+      padding: 0 2.4rem;
+      &-title {
+        font-size: 1.7rem;
+        font-weight: 500;
+        letter-spacing: -0.041rem;
+      }
+      &-close {
+        width: 2.8rem;
+        height: 2.8rem;
+        text-indent: -999999rem;
+        background: url("/assets/images/icon-black-icon-close-b@3x.png")no-repeat;
+        background-size: contain;
+      }
+    }
+    .tab-list {
+      display: flex;
+      justify-content: space-between;
+      li {
+        display: block;
+        width: 100%;
+        border-bottom: 0.1rem solid #ccc;
+        a {
+          display: block;
+          padding: 2.5rem 0 1rem;
+          font-size: 1.5rem;
+          letter-spacing: 0.024rem;
+          text-align: center;
+          color: #999;
+        }
+      }
+    }
+    .schedule-container {
+      padding-left: 2.4rem;
+      &-title {
+        padding: 3.2rem 0 1.25rem;
+        font-size: 1.3rem;
+        color: #999;
+      }
+      &-box {
+        position: relative;
+        &-date {
+          font-size: 1.5rem;
+          letter-spacing: -0.009rem;
+          position: relative;
+        }
+        &-date::after {
+          content:'';
+          display: block;
+          width: calc(100% - 7.5rem);
+          height: 0.1rem;
+          border-top: 1px solid #e8e8e8;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+        }
+        &-bundle {
+          display: flex;
+          margin-top: 2.45rem;
+          &-icon {
+            text-indent: -999999rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            background: url("/assets/images/icon-white-icon-calandar-w@3x.png")no-repeat blue;
+            background-size: contain;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+  }
+}

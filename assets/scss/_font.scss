@@ -1,0 +1,50 @@
+//NotoSansKR
+// 메모 : font 300,500,700 이외에 필요한지 확인
+// 메모 : https://webclub.tistory.com/261 참조
+// 메모 : https://d2.naver.com/helloworld/4969726
+// 메모 : https://m.blog.naver.com/oppun/221888199636
+
+// ex) 프로젝트 적용셈플 예시 : 폰트의 용량 및 브라우저에 따른 지원을 고려하여 아래와 같은 포맷을 지원
+// @font-face {
+  //   font-family: 'Spoqa Han Sans Neo';
+  //   font-style: normal;//   font-weight: 300;
+  //   src: local('Spoqa Han Sans Light'),
+  //   url('#{$spoqa-font-path}/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+  //   url('#{$spoqa-font-path}/SpoqaHanSansNeo-Light.woff') format('woff'),
+  //   url('#{$spoqa-font-path}/SpoqaHanSansNeo-Light.ttf') format('truetype');// }
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Spoqa Han Sans Light'),
+      url('../Noto_Sans_KR/NotoSansKR-Light.woff2') format('woff2'),
+      url('../Noto_Sans_KR/NotoSansKR-Light.woff') format('woff'),
+      url('../Noto_Sans_KR/NotoSansKR-Light.otf') format('otf'),
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans KR Regular'),
+      url('../Noto_Sans_KR/NotoSansKR-Regular.woff2') format('woff2'),
+      url('../Noto_Sans_KR/NotoSansKR-Regular.woff') format('woff'),
+      url('../Noto_Sans_KR/NotoSansKR-Regular.otf') format('otf'),
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans KR Medium'),
+      url('../Noto_Sans_KR/NotoSansKR-Medium.woff2') format('woff2'),
+      url('../Noto_Sans_KR/NotoSansKR-Medium.woff') format('woff'),
+      url('../Noto_Sans_KR/NotoSansKR-Medium.otf') format('otf'),
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans KR Bold'),
+      url('../Noto_Sans_KR/NotoSansKR-Bold.woff2') format('woff2'),
+      url('../Noto_Sans_KR/NotoSansKR-Bold.woff') format('woff'),
+      url('../Noto_Sans_KR/NotoSansKR-Bold.otf') format('otf'),
+}
